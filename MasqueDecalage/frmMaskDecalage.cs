@@ -28,7 +28,6 @@ namespace MasqueDecalage
             uint maskAn = 0xFE000000;
             uint maskMois = 0x01E00000;
             uint maskJour = 0x001F0000;
-            string date = "";
             string[] tMois = { "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" };
             uint Jour, Mois, An;
 
@@ -38,9 +37,11 @@ namespace MasqueDecalage
             Jour = (uint)((value & maskJour) / Math.Pow(2, 16));
 
 
-
+            txtDate.Text = Jour.ToString() + "/" + tMois[Mois -1] + "/" + An.ToString();
 
             indiceDate++;
+            if (indiceDate > 9)
+                indiceDate = 0;
         }
         private void btnHeurre_Click(object sender, EventArgs e)
         {
