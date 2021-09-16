@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*Pierre-Luc Robitaille et Victor Saulnier
+ * Masque et décallage
+ * 16/09/2021*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
