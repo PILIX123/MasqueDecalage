@@ -74,6 +74,7 @@
             // 
             this.txtDate.Location = new System.Drawing.Point(58, 80);
             this.txtDate.Name = "txtDate";
+            this.txtDate.ReadOnly = true;
             this.txtDate.Size = new System.Drawing.Size(210, 26);
             this.txtDate.TabIndex = 3;
             // 
@@ -81,6 +82,7 @@
             // 
             this.textHeure.Location = new System.Drawing.Point(322, 80);
             this.textHeure.Name = "textHeure";
+            this.textHeure.ReadOnly = true;
             this.textHeure.Size = new System.Drawing.Size(210, 26);
             this.textHeure.TabIndex = 4;
             // 
